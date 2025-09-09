@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Telegram WebApp</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <h1>Salom, bu mening WebApp saytimm!</h1>
+  <p>Bu sayt Telegram ichida ochildi 🚀</p>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand(); // saytni to‘liq ekranda ochadi
+
+    document.body.innerHTML += `<p>User ID: ${tg.initDataUnsafe.user?.id}</p>`;
+  </script>
+</body>
+</html>
